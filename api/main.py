@@ -7,9 +7,11 @@ from other_module import fn_from_other_module
 #print(os.environ.get("UNSPLASH_KEY", ""))
 UNSPLASH_URL = "https://api.unsplash.com/photos/random"
 UNSPLASH_KEY = os.environ.get("UNSPLASH_KEY", "")
+DEBUG = bool(os.environ.get("DEBUG", True))
+print(DEBUG)
 
 app = Flask(__name__)
-
+app.config["DEBUG"] = True
 @app.route("/new_image")
 def new_image():
     word = request.args.get("query")
