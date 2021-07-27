@@ -1,3 +1,6 @@
 {
-    "editor.tabSize":28
+    "editor.tabSize": 4,
+    "python.pythonPath": "C:\\Users\\Dottorandi\\Desktop\\images-gallery\\api\\.venv\\Scripts\\python.exe",
+    "python.linting.enabled": false,
+    "python.formatting.provider": "yapf"
 }
