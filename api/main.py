@@ -4,7 +4,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from dotenv import load_dotenv
 load_dotenv(dotenv_path = "./.env.local")
-from other_module import fn_from_other_module
+#from other_module import fn_from_other_module
 #print(os.environ.get("UNSPLASH_KEY", ""))
 UNSPLASH_URL = "https://api.unsplash.com/photos/random"
 UNSPLASH_KEY = os.environ.get("UNSPLASH_KEY", "")
